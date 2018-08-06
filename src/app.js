@@ -4,6 +4,16 @@ class Drone {
         this.id = id;
         this.name = name;
     }
+
+    //static method or class method
+    static getCompany(){
+        console.log('in getCompany');
+    }
+
+    //instance method
+    fly(){
+        console.log(`Drone ${this.id} is flying`);
+    }
 }
 // class properties
 Drone.maxHeight = 2000;
