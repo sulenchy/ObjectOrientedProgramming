@@ -1,8 +1,26 @@
 class Drone {
     constructor(id, name) {
         //instance properties
-        this.id = id;
-        this.name = name;
+        this._id = id;
+        this._name = name;
+    }
+
+    get id(){
+        console.log('in id getter');
+        return this._id + ' TEMPORARY';
+    }
+
+    get name(){
+        console.log('in id getter');
+        return this._name + ' TEMPORARY';
+    }
+
+    set id (value){
+        this._id = value;
+    }
+
+    set name (value){
+        this._name = value;
     }
 
     //static method or class method
@@ -18,6 +36,10 @@ class Drone {
 // class properties
 Drone.maxHeight = 2000;
 
-let drone = new Drone('A123', 'Flyer');
-let drone2 = new Drone('A12', 'Flyinh');
-console.log(Drone.maxHeight);
+let drone = new Drone('123', 'lambo');
+
+drone.id = '456';
+drone.name = 'toyota';
+
+
+console.log(`${drone.id} ${drone.name}`);
