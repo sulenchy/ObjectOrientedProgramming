@@ -1,13 +1,9 @@
 import {Vehicle} from './vehicle.js';
 
 export class Drone extends Vehicle{
-    start(){
-        super.start();
-        console.log('starting Car');
-    }
-
-    static getCompanyName(){
-        super.getCompanyName();
-        console.log('My Other Company');
+    constructor(license, model, latLong){
+        super(license, model, latLong);
+        this.airTimeHours = null;
+        this.base = null;
     }
 }

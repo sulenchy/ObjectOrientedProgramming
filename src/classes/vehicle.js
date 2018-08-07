@@ -1,9 +1,7 @@
 export class Vehicle{
-    start(){
-        console.log('starting Vehicle');
-    }
-
-    static getCompanyName(){
-        console.log('My Company')
+    constructor(license, model, latLong){
+        this.license = license;
+        this.model = model;
+        this.latLong = latLong;
     }
 }
