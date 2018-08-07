@@ -1,26 +1,14 @@
-class Vehicle{
-    start(){
-        console.log('starting Vehicle');
-    }
-
-    static getCompanyName(){
-        console.log('My Company')
-    }
-}
+import {Car} from './classes/car.js';
+import {Drone} from './classes/drone.js';
 
 
-class Car extends Vehicle{
-    start(){
-        super.start();
-        console.log('starting Car');
-    }
 
-    static getCompanyName(){
-        super.getCompanyName();
-        console.log('My Other Company');
-    }
-}
 
 
 let c = new Car();
-Car.getCompanyName();
+let d = new Drone();
+
+
+
+console.log(c);
+console.log(d);
